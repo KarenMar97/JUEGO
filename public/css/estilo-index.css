@@ -1,0 +1,118 @@
+*
+			{
+                cursor:url(../assets/cursor.png), pointer;
+                font-family: 'Balsamiq Sans', cursive;
+			}
+            
+			body
+			{
+				background-image:url(../assets/inicio1-01.png), url(../assets/inicio.jpg);
+				background-size:100% 100%;
+				background-attachment:fixed;
+				overflow:hidden;
+				margin:0px;
+			}
+			.sombra{
+				-webkit-box-shadow: -4px 9px 8px -9px #36363657;
+				-moz-box-shadow: -4px 9px 8px -9px #36363659;
+				box-shadow: -4px 9px 8px -9px #36363659;
+			}
+
+			#inicio_sesion
+			{
+				top:400px;
+				width:350px;
+				position: absolute;
+				margin: 0 auto;
+				left: 0;
+				right: 0;
+				opacity:0;
+				background-color:azure;
+				animation-name:inicio_sesion_animacion;
+				animation-direction:normal;
+				animation-duration:1s;
+				animation-iteration-count:1;
+				animation-timing-function:linear;
+				animation-fill-mode:forwards;
+			}
+
+			@keyframes inicio_sesion_animacion
+			{
+				100%
+				{
+					opacity:0.9;
+					top: 200px;
+				}
+			}
+
+			#titulo
+			{
+				background-image:url(../assets/titulo.png);
+				width:500px;
+				height:181px;
+				position:fixed;
+				margin: 0 auto;
+				left: 0;
+				right: 0;
+				animation-name: titulo_animacion;
+				animation-duration: 1.5s;
+				animation-fill-mode: forwards;
+			}
+			@keyframes titulo_animacion
+			{
+				100%
+				{
+					top: 0px;
+				}
+			}
+            .degradado-btn{
+                background: rgba(73,155,234,1);
+                background: -moz-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(0,59,117,1) 100%);
+                background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(73,155,234,1)), color-stop(100%, rgba(0,59,117,1)));
+                background: -webkit-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(0,59,117,1) 100%);
+                background: -o-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(0,59,117,1) 100%);
+                background: -ms-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(0,59,117,1) 100%);
+                background: linear-gradient(to bottom, rgba(73,155,234,1) 0%, rgba(0,59,117,1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#003b75', GradientType=0 );
+                border: solid 1px #003b75;
+                color: #F7F7F8;
+            }
+            .texto-azul{
+                color: #4A72B2;
+            }
+            .card{
+                width: 500px;
+                height: 300px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-radius: 16px;
+            }
+            .card-body{
+                width: 90%;
+            }
+            .form-control{
+                border: solid 1px #003b75;
+                margin-top: 10px;
+                width: 80%;
+                height: 40px;
+                border-radius: 10px;
+                padding: 0px 15px;
+                outline: #003b7500;
+            }
+            .input-group-append{
+                width: 40px;
+                height: 40px;
+            }
+            .btn-entrar{
+                margin: auto;
+                margin-top: 25px;
+                width: 100px;
+                height: 40px;
+                color: #F7F7F8;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+            }
