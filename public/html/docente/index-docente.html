@@ -17,9 +17,9 @@
 <body class="degradado-btn">
     <div id="barra_superior" class="barra_superior degradado-btn">
         <span id="nombre_software" class="fuente-cursiva"> Climatest </span>
-        
+
         <div><i class="material-icons">home</i>
-        <i class="material-icons">power_settings_new</i></div>
+            <i class="material-icons">power_settings_new</i></div>
     </div>
 
     <div class="barra-inferior">Docente</div>
@@ -46,14 +46,7 @@
             <i class="material-icons">message</i>
             <p>Preguntas</p>
         </div>
-        <div class="contenedor-menu sombra">
-            <i class="material-icons">bar_chart</i>
-            <p>Nivel Pregunta</p>
-        </div>
-        <div class="contenedor-menu sombra">
-            <i class="material-icons">sort</i>
-            <p>Respuesta</p>
-        </div>
+    
         <div class="contenedor-menu sombra">
             <i class="material-icons">timeline</i>
             <p>Estadísticas</p>
@@ -61,10 +54,89 @@
     </div>
     <div class="bienvenido-contenido">
 
-    <div class="degradado-btn bienvenido-usua sombra">
-        <i class="material-icons">bookmark</i>
-        <p>Bienvenido</p>
+
+        <div class="itemsCard">
+            <div class="degradado-btn bienvenido-usua sombra">
+                <i class="material-icons">bookmark</i>
+                <p>Bienvenido</p>
+            </div>
+            <div class="contenidoBlanco">
+                <div class="displayColumn">
+                </div>
+            </div>
+        </div>
+
+        <!-- Curso -->
+
+        <div class="itemsCard">
+            <div class="degradado-btn curso-usua sombra">
+                <i class="material-icons">toys</i>
+                <p>Curso</p>
+            </div>
+            <div class="contenidoBlanco">
+                <div class="displayColumn">
+                    <label for="">Nombre</label>
+                    <input class="inputs" type="text">
+                    <div class="btn-guardar degradado-btn" onclick="ingreso()">Guardar</div>
+                </div>
+            </div>
+        </div>
+        <!-- Lista -->
+        <div class="itemsCard">
+            <div class="degradado-btn curso-usua sombra">
+                <i class="material-icons">table_rows</i>
+                <p>Lista</p>
+            </div>
+            <div class="contenidoBlanco">
+                <div class="contenedor-gris">
+                    <input class="inputs-curso" type="text" placeholder="Buscar por nombre">
+                    <i class="material-icons">search</i></label>
+                    <table class="table-curso">
+                        <tr>
+                          <th>Nombre</th>
+                          <th>Fecha de creación</th>
+                          <th>Acción</th>
+                        </tr>
+                        <tr>
+                          <td>...</td>
+                          <td>...</td>
+                          <td>...</td>
+                        </tr>
+                        <tr>
+                            <td>...</td>
+                            <td>...</td>
+                            <td>...</td>
+                          </tr>
+                      </table>  
+                </div>                
+            </div>
+        </div>
+        <!-- fin curso -->
+
+         <!-- usuario -->
+
+         <div class="itemsCard">
+            <div class="degradado-btn bienvenido-usua sombra">
+                <i class="material-icons">supervisor_account</i>
+                <p>Usuario</p>
+    
+            </div>
+            <div class="contenidoBlanco">
+                    <div class="displayColumn">
+                        <label for="">Nombre</label>
+                        <input class="inputs" type="text">
+                        <label for="">Genero</label>
+                        <input class="inputs" type="text">
+
+            </div>
+        </div>
+
+        <!-- fin usuario -->
+
     </div>
+
+
+
 
 </body>
 

@@ -45,7 +45,7 @@ body
     left: 5px;
     border-radius: 3px;
     width: 200px;
-    height: 340px;
+    height: 305px;
 }
 .card-superior{
     width: 100%;
@@ -62,7 +62,7 @@ body
 }
 .bienvenido-contenido{
     position: absolute;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     top: 85px;
     width: 1136px;
     height: 120px;
@@ -72,7 +72,7 @@ body
 }
 
 .bienvenido-usua{
-    position: absolute;
+    /* position: absolute; */
     width: 1136px;
     height: 40px;
     display: flex;
@@ -94,7 +94,7 @@ body
     width: 95%;
     margin: auto;
     margin-top: 5px;
-    padding: 5px 0px;
+    padding: 10px 0px;
     display: flex;
     align-items: center;
     margin-bottom: 2px;
@@ -115,3 +115,86 @@ body
 .contenedor-menu i{
     margin-right: 5px;
 }
+
+.contenedorPrincipal {
+    background: red;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+}
+
+.itemsCard {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenidoBlanco {
+    background-color: white;
+    padding: 16px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+}
+
+.inputs {
+    width: 98%;
+    padding: 10px;
+    border: 1px solid gray;
+    position: relative;
+}
+
+.displayColumn {
+    display: flex;
+    flex-direction: column;
+}
+.btn-guardar{
+    margin: auto;
+    margin-top: 25px;
+    width: 100px;
+    height: 40px;
+    color: #F7F7F8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.contenedor-gris {
+    background-color: rgb(238, 238, 238);
+    padding: 80px;
+    margin-bottom: 10px;
+}
+.curso-usua{
+    width: 1136px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 1px;
+}
+.inputs-curso{
+
+    width: 98%;
+    padding: 10px;
+    border: 1px solid gray;
+    position: relative;
+    align-items: center;
+}
+table-curso {
+    font-family: 'Balsamiq Sans', cursive;
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+  }
+  
+  td, th {
+    border: 1px solid #e2e0e0;
+    text-align: center;
+    padding: 15px;
+    width: 50%;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #d6cfcff1;
+    width: 30%;
+    
+  }
