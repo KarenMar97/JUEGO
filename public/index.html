@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>CLIMATEST</title>
-        <link rel="stylesheet" href="css/estilo-index.css">
-        <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
-        <meta name="viewport" content="width:device-width, initial-scale=swap" rel="stylesheet">
-    </head>
-    <body>
-        
-        <div id="titulo"></div>
-		<div class="card sombra" id="inicio_sesion">
-			<div class="card-header texto-azul"><span class="fas fa-shield-alt "></span> Inicio de Sesi&oacute;n</div>
-			<div class="card-body">
-				<form id="formulario" method="post" autocomplete="off" action="validar.php">
-					<div class="form-group">
-						<div class="input-group">
-							<span class="input-group-append"><span class="input-group-text degradado-btn"><span class="fas fa-user" style="font-size:20px;"></span></span></span>
-							<input type="text" placeholder="Usuario" id="nombre-usuario" name="usuario" class="form-control" maxlength="20" autofocus>
-						</div>
-					</div>
 
-					<div class="form-group">
-						<div class="input-group">
-							<span class="input-group-append"><span class="input-group-text degradado-btn"><span class="fas fa-lock" style="width:18px;"></span></span></span>
-							<input type="password" name="clave" id="clave-usuario" placeholder="Clave" class="form-control" maxlength="20">
-						</div>
+<head>
+	<meta charset="utf-8">
+	<title>CLIMATEST</title>
+	<link rel="stylesheet" href="css/estilo-index.css">
+	<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width:device-width, initial-scale=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<div id="titulo"></div>
+	<div class="card sombra" id="inicio_sesion">
+		<div class="card-header texto-azul"><span class="fas fa-shield-alt "></span> Inicio de Sesi&oacute;n</div>
+		<div class="card-body">
+			<form id="formulario" method="post" autocomplete="off" action="validar.php">
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-append"><span class="input-group-text degradado-btn"><span
+									class="fas fa-user" style="font-size:20px;"></span></span></span>
+						<input type="text" placeholder="Usuario" id="nombre-usuario" name="usuario" class="form-control"
+							maxlength="20" autofocus>
 					</div>
-					<div class="btn-entrar degradado-btn" onclick="ingreso()">Entrar</div>
-				</form>
-			</div>
-        </div>
-        <script src="js/index.js"></script>
-    </body>
+				</div>
+
+				<div class="form-group">
+					<div class="input-group">
+						<span class="input-group-append"><span class="input-group-text degradado-btn"><span
+									class="fas fa-lock" style="width:18px;"></span></span></span>
+						<input type="password" name="clave" id="clave-usuario" placeholder="Clave" class="form-control"
+							maxlength="20">
+					</div>
+				</div>
+				<div class="btn-entrar degradado-btn" onclick="ingreso()">Entrar</div>
+			</form>
+		</div>
+	</div>
+	<script src="js/index.js"></script>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="/__/firebase/7.15.4/firebase-app.js"></script>
+
+	<!-- Initialize Firebase -->
+	<script src="/__/firebase/init.js"></script>
+</body>
+
 </html>
