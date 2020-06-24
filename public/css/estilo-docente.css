@@ -1,14 +1,18 @@
 body
 {
     cursor:url(../assets/cursor.png), pointer;
+    background-repeat: no-repeat;
+    background-size: contain;
     min-height: 100vh;
     font-family: 'Balsamiq Sans', cursive;
     font-weight: 100;
     margin: 0px;
+    overflow-x: hidden;
 }
 .barra_superior{
     width: 100%;
     position: fixed;
+    z-index: 9;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -18,6 +22,7 @@ body
 }
 .barra-inferior{
     position: fixed;
+    z-index: 9;
     width: 100%;
     height: 30px;
     top:48px;
@@ -25,7 +30,7 @@ body
     align-items: center;
     justify-content: center;
     color: #ffffff;
-    background-color: #193c889c;
+    background-color: #6886c7;
 
 }
 
@@ -73,7 +78,7 @@ body
 
 .bienvenido-usua{
     /* position: absolute; */
-    width: 1136px;
+    width: 100%;
     height: 40px;
     display: flex;
     align-items: center;
@@ -89,6 +94,7 @@ body
     background: -ms-linear-gradient(top, rgba(73,155,234,1) 0%, rgba(0,59,117,1) 100%);
     background: linear-gradient(to bottom, rgba(73,155,234,1) 0%, rgba(0,59,117,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#499bea', endColorstr='#003b75', GradientType=0 );
+    
 }
 .contenedor-menu{
     width: 95%;
@@ -126,6 +132,7 @@ body
 .itemsCard {
     display: flex;
     flex-direction: column;
+    width: 98%;
 }
 
 .contenidoBlanco {
@@ -145,56 +152,85 @@ body
 .displayColumn {
     display: flex;
     flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .btn-guardar{
     margin: auto;
     margin-top: 25px;
     width: 100px;
     height: 40px;
+    margin-right: 0px; 
     color: #F7F7F8;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+
 }
 .contenedor-gris {
     background-color: rgb(238, 238, 238);
-    padding: 80px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
     margin-bottom: 10px;
 }
 .curso-usua{
-    width: 1136px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
     display: flex;
     align-items: center;
     color: white;
     border-radius: 1px;
 }
 .inputs-curso{
-
-    width: 98%;
-    padding: 10px;
-    border: 1px solid gray;
+    width: 90%;
+    height: 40px;
+    border: 1px solid rgba(128, 128, 128, 0.452);
     position: relative;
+    display: flex;
     align-items: center;
+    background: white;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
-table-curso {
+.table-curso {
     font-family: 'Balsamiq Sans', cursive;
     border-collapse: collapse;
     width: 100%;
     height: 100%;
     padding: 10px;
+    margin: 0px !important;
   }
   
   td, th {
     border: 1px solid #e2e0e0;
     text-align: center;
     padding: 15px;
-    width: 50%;
+    width: 33.3%;
   }
   
   tr:nth-child(even) {
     background-color: #d6cfcff1;
     width: 30%;
-    
   }
+.inputSinBorde{
+    border: solid 1px #193c8800;
+    background-color: #193c8800;
+    outline: #193c889c;
+    margin-left: 15px;
+    width: 95%;
+    height: 30px;
+}
+.gris-backgroud{
+    background: #c0c0c0;
+    color: rgb(78, 78, 78);
+    height: 40px;
+    width: 40px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}

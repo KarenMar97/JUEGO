@@ -46,7 +46,7 @@
             <i class="material-icons">message</i>
             <p>Preguntas</p>
         </div>
-    
+
         <div class="contenedor-menu sombra">
             <i class="material-icons">timeline</i>
             <p>Estadísticas</p>
@@ -89,53 +89,77 @@
             </div>
             <div class="contenidoBlanco">
                 <div class="contenedor-gris">
-                    <input class="inputs-curso" type="text" placeholder="Buscar por nombre">
-                    <i class="material-icons">search</i></label>
-                    <table class="table-curso">
-                        <tr>
-                          <th>Nombre</th>
-                          <th>Fecha de creación</th>
-                          <th>Acción</th>
-                        </tr>
-                        <tr>
-                          <td>...</td>
-                          <td>...</td>
-                          <td>...</td>
-                        </tr>
-                        <tr>
-                            <td>...</td>
-                            <td>...</td>
-                            <td>...</td>
-                          </tr>
-                      </table>  
-                </div>                
+                    <!-- <div style="width: 100%; height: 90%;"> -->
+                        <div input class="inputs-curso" type="text" placeholder="Buscar por nombre">
+                            <input type="text" placeholder="Buscar por nombre" class="inputSinBorde">
+                            <i class="material-icons gris-backgroud">search</i>
+                        </div>
+    
+                        <table class="table-curso">
+                            <thead>
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Fecha de creación</th>
+                                    <th>Estado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>...</td>
+                                    <td>...</td>
+                                    <td>...</td>
+                                </tr>
+                                <tr>
+                                    <td>...</td>
+                                    <td>...</td>
+                                    <td>...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    <!-- </div> -->
+
+                </div>
             </div>
         </div>
         <!-- fin curso -->
 
-         <!-- usuario -->
+        <!-- usuario -->
 
-         <div class="itemsCard">
+        <div class="itemsCard">
             <div class="degradado-btn bienvenido-usua sombra">
                 <i class="material-icons">supervisor_account</i>
                 <p>Usuario</p>
-    
+
             </div>
             <div class="contenidoBlanco">
-                    <div class="displayColumn">
-                        <label for="">Nombre</label>
-                        <input class="inputs" type="text">
-                        <label for="">Genero</label>
-                        <input class="inputs" type="text">
+                <div class="displayColumn">
+                    <label for="">Nombre</label>
+                    <input class="inputs" type="text">
+                </div>
+                <div class="displayColumn">
+                    <label for="">Genero</label>
+                    <input class="inputs" type="text">
+                </div>
+            </div>
 
+            <!-- fin usuario -->
+        </div>
+        <!-- Estadisticas -->
+        <div class="itemsCard">
+            <div class="degradado-btn curso-usua sombra">
+                <i class="material-icons">timeline</i>
+                <p>Estadísticas</p>
+            </div>
+            <div class="contenidoBlanco">
+                <div class="displayColumn">
+                    <label for="">Curso</label>
+                    <input class="inputs" type="text">
+                    <div class="btn-guardar degradado-btn" onclick="ingreso()">Guardar</div>
+                </div>
             </div>
         </div>
 
-        <!-- fin usuario -->
-
-    </div>
-
-
+        <!-- fin estadisticas -->
 
 
 </body>
